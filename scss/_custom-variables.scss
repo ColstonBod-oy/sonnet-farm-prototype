@@ -1,0 +1,33 @@
+@font-face {
+   font-family: "Bebas Neue";
+   src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "Roboto Thin";
+   src: url("../fonts/Roboto-Thin.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "Roboto Light";
+   src: url("../fonts/Roboto-Light.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "Roboto";
+   src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "Roboto Black";
+   src: url("../fonts/Roboto-Black.ttf") format("truetype");
+}
+
+$BebasNeue: "Bebas Neue";
+$header-font: $BebasNeue; 
+
+$thin: "Roboto Thin";
+$light: "Roboto Light";
+$normal: "Roboto";
+$bold: "Roboto Black";
+

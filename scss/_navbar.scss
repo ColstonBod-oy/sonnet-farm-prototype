@@ -1,0 +1,20 @@
+.navbar {
+	background-color: $green;
+}
+
+.navbar-brand {
+	font-family: $BebasNeue;
+	font-size: 2rem;
+}
+
+.nav-item {
+ 	font-family: $BebasNeue;
+	font-size: 1.4rem;
+	letter-spacing: 1px;
+	margin-left: 2em;	
+}
+
+.navbar-shadow {
+	box-shadow: 0 3px 20px rgba(black, .2);
+}
+

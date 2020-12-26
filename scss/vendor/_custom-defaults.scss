@@ -1,0 +1,40 @@
+*, *::before, *::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Bebas Neue";
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+}
+
+@media screen and (min-width: 992px) {
+	body, html {
+		scroll-snap-type: y mandatory;
+		scroll-padding-top: 89.8px;
+	}
+	
+	section {
+		scroll-snap-align: start;
+	}
+}
+
+$white: #f3f1ef;
+$black: #2e3131;
+$yellow: #eeee00;
+$green: #4daf7c;
+
+$body-bg: $green;
+$body-color: $white;
+
+$primary: $green;
+          
+$navbar-light-hover-color: rgba($yellow, .7);
+$navbar-light-active-color: rgba($yellow, .9);
+
+
