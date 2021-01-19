@@ -9,7 +9,7 @@ $(document).ready(function() {
 		});
 	});
 	
-	// link highlighting
+	// link highlighting & navbar shadow
 	const linkOne = document.querySelector(".home-link");
 	const linkTwo = document.querySelector(".products-link");
 	const sectionOne = document.querySelector(".home");

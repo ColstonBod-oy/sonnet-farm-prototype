@@ -3,9 +3,16 @@ $(document).ready(function() {
 	var $texts = $(".desc-column").children();
 	var $nextSlide = $(".next-btn");
 	var $prevSlide = $(".prev-btn");
-	const totalSlides = $slides.length;
+	const totalSlides = $slides.length - 1;
 	let index = 0;
-
+	
+	for (let i = 1; i < $slides.length - 1; i++) {
+		//$slides.eq(i).removeClass("active");
+		//$texts.eq(i).removeClass("active");
+		$slides.eq(i).hide();
+		$texts.eq(i).hide();
+	}
+	
 	$nextSlide.click(function() {
 		next("next");
 	});
@@ -13,8 +20,11 @@ $(document).ready(function() {
 	$prevSlide.click(function() {
 		next("prev");
 	});
-
+	
 	function next(direction) {
+		$slides.eq(index).fadeOut("slow");
+		$texts.eq(index).fadeOut("slow");
+		
 		if (direction == "next") {
 			index++;
 		
@@ -32,21 +42,18 @@ $(document).ready(function() {
 				index--;
 			}
 		}
-	
-		for (let i = 0; i < $slides.length; i++) {
-			$slides.eq(i).removeClass("active");
-			$texts.eq(i).removeClass("active");
-  	}
-	
-		$slides.eq(index).addClass("active");
-		$texts.eq(index).addClass("active");
-	
+		
+		//$slides.eq(index).addClass("active");
+		//$texts.eq(index).addClass("active");
+		$slides.eq(index).delay("slow").fadeIn("slow");
+		$texts.eq(index).delay("slow").fadeIn("slow");
+		
 		var $load = $("#load");
-		$load.removeClass("bg-progbar");
+		$load.removeClass("bg-bar");
 	
 		// trigger a DOM reflow
 		void $load.width(); 
-		$load.addClass("bg-progbar");
+		$load.addClass("bg-bar");
 	
 		function fade() {
 			var $fade = $("#fade");
@@ -87,12 +94,12 @@ $(document).ready(function() {
 	
 	$(".next-btn, .prev-btn").hover(function() {
 		if (isDesktopView) {
-  		$(".item").css("border-color", "yellow");
-			$(".bg-progbar").css("border-color", "yellow");
+  		$(".item").css("border-color", "#eeee00");
+			$(".bg-bar").css("border-color", "#eeee00");
 		}
 	}, function() { // on mouseout, reset the properties
   	$(".item").css("border-color", "");
-		$(".bg-progbar").css("border-color", "");
+		$(".bg-bar").css("border-color", "");
 	});
 	
 	setScreenWidthFlag();
