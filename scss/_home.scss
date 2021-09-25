@@ -22,23 +22,20 @@ html {
 	margin: 16.2vh 0;
 	border: solid $green;
 	border-width: 3px 0;
-	background: rgba(black, .5);
+	background: rgba(black, 0.5);
 	min-height: calc(100vh - 89.8px - 16.2vh * 2);
 }
 
-.jbtrn-header, .map-header {
+.jbtrn-header,
+.map-header {
 	-webkit-text-stroke: 1.4px $green;
-	text-shadow:
-		2.4px 2.4px 0 $green,
-			-1px -1px 0 $green,
-		 	 1px -1px 0 $green,
-		   -1px 1px 0 $green,
-		    1px 1px 0 $green;
+	text-shadow: 2.4px 2.4px 0 $green, -1px -1px 0 $green, 1px -1px 0 $green,
+		-1px 1px 0 $green, 1px 1px 0 $green;
 	font-size: clamp(55px, 15vw, 80px);
 }
 
 .jbtrn-body {
-	font-size: .9rem;
+	font-size: 0.9rem;
 }
 
 .jbtrn-line {
@@ -46,13 +43,13 @@ html {
 }
 
 .jbtrn-info {
-	font-size: .7rem;
+	font-size: 0.7rem;
 }
 
 .jbtrn-button {
 	font-family: $BebasNeue;
 	font-size: 1.1rem;
- 	padding: .4em .8em;
+	padding: 0.4em 0.8em;
 }
 
 .jbtrn-button:hover {
@@ -66,11 +63,11 @@ html {
 	padding: 32px 16px;
 	border: solid $green;
 	border-width: 3px 0;
-	background: rgba(black, .5);
+	background: rgba(black, 0.5);
 }
 
 #map {
-	width: 100%; // width: 600px; on desktop view 
+	width: 100%; // width: 600px; on desktop view
 	min-height: calc(100vh - 50vh);
 	// margin-bottom: 16px;
 }
@@ -79,24 +76,24 @@ html {
 	.navbar-brand {
 		font-size: 2.1rem;
 	}
-	
+
 	.navbar-toggler {
 		font-size: 21px;
 		padding: 5.5px 13.5px;
 	}
-	
+
 	.nav-item {
 		font-size: 1.5rem;
 	}
-	
+
 	.jbtrn-body {
 		font-size: 1rem;
 	}
-	
+
 	.jbtrn-info {
-		font-size: .8rem;
+		font-size: 0.8rem;
 	}
-	
+
 	.jbtrn-button {
 		font-size: 1.3rem;
 	}
@@ -106,24 +103,24 @@ html {
 	.navbar-brand {
 		font-size: 2.2rem;
 	}
-	
+
 	.navbar-toggler {
 		font-size: 22px;
 		padding: 7px 15px;
 	}
-	
+
 	.nav-item {
 		font-size: 1.6rem;
 	}
-	
+
 	.jbtrn-body {
 		font-size: 1.1rem;
 	}
-	
+
 	.jbtrn-info {
-		font-size: .9rem;
+		font-size: 0.9rem;
 	}
-	
+
 	.jbtrn-button {
 		font-size: 1.4rem;
 	}
@@ -133,46 +130,42 @@ html {
 	.home {
 		height: 100vh;
 	}
-	
-	.jumbotron, .map-api {
+
+	.jumbotron,
+	.map-api {
 		margin: 0;
 		background: transparent;
 	}
-	
-	.jbtrn-header, .map-header {
-		color: rgba(black, .5);
+
+	.jbtrn-header,
+	.map-header {
+		color: rgba(black, 0.5);
 		-webkit-text-stroke: 2px $green;
 		text-shadow: none;
 	}
-	
+
 	// temporary only
 	.navbar-brand {
 		font-size: 2.3rem;
 	}
-	
+
 	.nav-item {
 		font-size: 1.6rem;
 	}
-	
+
 	.jbtrn-body {
 		font-size: 1.3rem;
 	}
-	
+
 	.jbtrn-info {
-		font-size: .9rem;
+		font-size: 0.9rem;
 	}
-	
+
 	.jbtrn-button {
 		font-size: 1.4rem;
 	}
-	
+
 	#map {
 		min-height: calc(100vh - 40vh);
 	}
 }
-
-
-
-
-
-

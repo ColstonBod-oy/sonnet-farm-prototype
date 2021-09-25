@@ -1,24 +1,33 @@
-*, *::before, *::after {
+*,
+*::before,
+*::after {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-body, html {
-  height: 100%;
+body,
+html {
+	height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: "Bebas Neue";
-  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+	src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
 }
 
 @media screen and (min-width: 992px) {
-	body, html {
+	body,
+	html {
 		scroll-snap-type: y mandatory;
 		scroll-padding-top: 89.8px;
 	}
-	
+
 	section {
 		scroll-snap-align: start;
 	}
@@ -33,8 +42,6 @@ $body-bg: $green;
 $body-color: $white;
 
 $primary: $green;
-          
-$navbar-light-hover-color: rgba($yellow, .7);
-$navbar-light-active-color: rgba($yellow, .9);
 
-
+$navbar-light-hover-color: rgba($yellow, 0.7);
+$navbar-light-active-color: rgba($yellow, 0.9);
